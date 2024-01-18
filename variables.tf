@@ -21,6 +21,18 @@ variable "cluster_location" {
   default     = "us-central1-a"
 }
 
+variable "bucket_location" {
+  description = "Bucket location for storage"
+  type        = string
+  default     = "US"
+}
+
+variable "delete_protect" {
+  description = "Flag used to set the deletion_protection attribute to prevent cluster deletion"
+  type        = bool
+  default     = true
+}
+
 variable "resource_labels" {
   description = "Set of labels to be applied to the cluster"
   type        = map(string)
@@ -105,6 +117,12 @@ variable "node_spot" {
   description = "Use spot nodes"
   type        = bool
   default     = false
+}
+
+variable "release_channel" {
+  description = "The GKE release channel to subscribe to."
+  type        = string
+  default     = "REGULAR"
 }
 
 // ----------------------------------------------------------------------------

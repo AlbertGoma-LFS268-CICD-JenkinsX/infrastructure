@@ -27,6 +27,8 @@ module "jx" {
   node_preemptible                = var.node_preemptible
   kuberhealthy                    = var.kuberhealthy
   node_spot                       = var.node_spot
+  bucket_location                 = var.bucket_location
+  delete_protect                  = var.delete_protect
 }
 
 output "connect" {
