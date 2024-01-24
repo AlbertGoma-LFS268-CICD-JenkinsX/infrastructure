@@ -7,5 +7,5 @@ bucket_location = "EU"
 kuberhealthy = false
 force_destroy = true
 node_spot = true
-release_channel = "NONE"
+release_channel = "REGULAR"
 delete_protect = false
